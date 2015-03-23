@@ -1,0 +1,10 @@
+Users:
+{{#each user in model}}
+	<p>Email: {{user.email}}</p>
+	<p>Username: {{user.username}}</p>
+	<p>Chrome Extension Id: {{user.chromeExtensionId}}</p>
+	<p>Password: {{user.password}}</p>
+	<p>First name: {{user.firstName}}</p>
+	<p>Last name: {{user.lastName}}</p>
+{{/each}}
+{{outlet}}
