@@ -7,5 +7,5 @@ export default DS.Model.extend({
 	, password: DS.attr('String')
 	, firstName: DS.attr('String')
 	, lastName: DS.attr('String')
-	, _consumptions: DS.hasMany('consumption')
+	, _consumptions: DS.hasMany('consumption', { async: true })
 });

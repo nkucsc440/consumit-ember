@@ -1,10 +1,19 @@
 Users:
+<ul>
 {{#each user in model}}
-	<p>Email: {{user.email}}</p>
-	<p>Username: {{user.username}}</p>
-	<p>Chrome Extension Id: {{user.chromeExtensionId}}</p>
-	<p>Password: {{user.password}}</p>
-	<p>First name: {{user.firstName}}</p>
-	<p>Last name: {{user.lastName}}</p>
+	<hr>
+	<li><strong>ID:</strong> {{user.id}}</li>
+	<li><strong>Email:</strong> {{user.email}}</li>
+	<li><strong>Username:</strong> {{user.username}}</li>
+	<li><strong>Chrome Extension Id:</strong> {{user.chromeExtensionId}}</li>
+	<li><strong>Password:</strong> {{user.password}}</li>
+	<li><strong>First name:</strong> {{user.firstName}}</li>
+	<li><strong>Last name:</strong> {{user.lastName}}</li>
+	<li><strong>Consumptions:</strong>
+		<ul> {{#each consumption in user._consumptions}}
+			<li><strong>Consumption:</strong> {{consumption}}</li>
+		{{/each}} </ul>
+	</li>
 {{/each}}
+</ul>
 {{outlet}}
