@@ -38,5 +38,8 @@
     "glob": "^4.5.3",
     "morgan": "^1.5.2",
     "rimraf": "^2.2.8"
+  },
+  "dependencies": {
+    "ember-cli-simple-auth": "^0.7.3"
   }
 }

@@ -9,6 +9,7 @@ Router.map(function() {
   this.resource("consumptions", function() {});
   this.resource("users", function() {});
   this.resource("consumables", function() {});
+  this.route('login');
 });
 
 export default Router;
